@@ -43,7 +43,7 @@ export default function Faq() {
     }
 
     return (
-        <div className='relative bg-black min-h-screen px-4 py-10 md:px-8'>
+        <div className='relative bg-black min-h-screen px-4 py-10 md:px-8 w-screen'>
             <div className='max-w-4xl mx-auto bg-black'>
                 {data.map((items) => (
                     <div key={items.id} className='mb-4'>
