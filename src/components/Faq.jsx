@@ -53,7 +53,8 @@ export default function Faq() {
                             <span className={`absolute right-9 text-2xl transition-transform duration-300 
                                 ${activeId === items.id ? 'rotate-45' : ''}`}>+</span>
                         </div>
-                        {activeId === items.id && (<p className='quicksand text-white p-4 md:text-base leading-7'>{items.answer}</p>)}
+                        <p className={`overflow-hidden transition-all duration-500 ease-in-out 
+                               ${activeId === items.id ? 'max-h-[500px] opacity-100 text-white ' : ''}`}>{items.answer}</p>
                     </div>
                 ))}
 
