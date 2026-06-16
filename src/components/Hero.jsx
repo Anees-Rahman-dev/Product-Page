@@ -17,7 +17,7 @@ export default function Hero() {
                 autoPlay
                 loop
                 muted
-                className="w-full h-full object-cover"
+                className="absolute inset-0 w-full h-300px object-cover "
             />
 
             <div className="absolute inset-0 flex flex-col justify-center px-16 text-white">
