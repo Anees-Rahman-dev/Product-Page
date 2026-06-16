@@ -21,7 +21,19 @@ export default function Faq() {
             question: "Why were Katanas made?",
             answer:
                 "According to historians, the Katana was developed to create more effective swords for fighting Mongol forces during the invasions of Japan between 1274 and 1281. The older straight swords were less suitable for combat on horseback, while the Katana's curved blade was better adapted to the needs of warriors in battle."
+        },
+        {
+            id : 4,
+            question : "Do you Ship worldwide?",
+            answer : 
+                 "We deliver worldwide. However, we invite you to check in advance the conditions of purchase and import of weapons in your country. We cannot check the regulations of each country at every moment and modify our countries served according to that."
+        },
+        {
+            id : 5,
+            question : "How much does a real Katana cost?",
+            answer : "A Katana made in Japan with the famous Tamahagane steel by a Japanese blacksmith in the tradition usually costs between $5,000 and $15,000. However, there is a lot of confusion around the Katana, as there are also antique Katanas that are traditionally forged and can be found second hand for $1000 and up depending on the state. You can also find traditionally forged Katanas in other countries with other steels also very qualitative for a few hundred dollars. In our store, we offer Katanas starting at $200."
         }
+
     ];
 
 
@@ -35,10 +47,11 @@ export default function Faq() {
             <div className='max-w-4xl mx-auto bg-black'>
                 {data.map((items) => (
                     <div key={items.id} className='mb-4'>
-                       <div className=' relative bg-gray-900 text-white px-4 py-6 md:p-5 cursor-pointer text-sm md:text-lg flex justify-between items-center' onClick={() => handleQs(items.id)}>
-                        <span className='quicksand'>{items.question}</span>
-                        <span className=' absolute right-9'>{activeId === items.id ? "-" : "+"}</span>
-                       </div>
+                        <div className=' relative bg-gray-900 text-white px-4 py-6 md:p-5 cursor-pointer text-sm md:text-lg flex justify-between items-center'
+                            onClick={() => handleQs(items.id)}>
+                            <span className='quicksand'>{items.question}</span>
+                            <span className=' absolute right-9 text-2xl'>{activeId === items.id ? "-" : "+"}</span>
+                        </div>
                         {activeId === items.id && (<p className='quicksand text-white p-4 md:text-base leading-7'>{items.answer}</p>)}
                     </div>
                 ))}
