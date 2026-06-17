@@ -15,7 +15,7 @@ function NavBar() {
       {/* FOR MOBILE */}
       <div className='block md:hidden w-full px-6 text-white relative '>
         <div className=''>
-          <span className='quicksand'>KATANA</span>
+
           <button onClick={() => setIsOpen(!isOpen)} className='cursor-pointer p-5'>
             {isOpen ? '✕' : '☰'}</button>
         </div>
