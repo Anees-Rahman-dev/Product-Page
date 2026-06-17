@@ -11,7 +11,7 @@ export default function Hero() {
         })
     }, [])
     return (
-        <div className="relative h-[70vh] md:[85vh] lg:h-screen w-full overflow-hidden">
+        <div className="relative h-[70vh] md:h-[85vh] lg:h-screen w-full overflow-hidden">
             <video
                 src="/video/katana.mp4"
                 autoPlay
@@ -20,7 +20,7 @@ export default function Hero() {
                 className="absolute inset-0 w-full h-full object-cover "
             />
 
-            <div className="relative z-10 flex h-full min-h-screen flex-col justify-center px-6 md:px-16 text-white">
+            <div className="relative z-10 flex h-full  flex-col justify-center px-6 md:px-16 text-white">
                 <h1
                     data-aos="fade-up"
                     className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gray-300 via-black-300 to-black-800 bg-clip-text text-transparent">

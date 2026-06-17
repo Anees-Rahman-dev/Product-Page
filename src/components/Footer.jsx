@@ -4,7 +4,7 @@ export default function
 () {
   return (
     <div className='bg-gray-900 min-h-[400px] w-full'>
-     <div className='bg-black min-h-[400px] flex justify-center md:flex-row items-start gap-10 md:gap-24 px-6 md:px-12  py-10 text-white  '>
+     <div className='bg-black min-h-[400px] flex justify-center flex-col md:flex-row items-start gap-10 md:gap-24 px-6 md:px-12  py-10 text-white  '>
          <div className='h-full py-4 px-5  flex flex-col gap-4'>
           <h1 className='quicksand text-xl font-semibold'>Main Menu</h1>
           <h3 className='quicksand'>Other Swrords</h3>
